@@ -19,4 +19,10 @@
     height: auto;
 }
 
+.clickable-area {
+    position: absolute;
+    background-color: white;
+    border: 2px solid red;
+}
+
   
