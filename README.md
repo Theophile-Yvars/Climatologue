@@ -1,4 +1,4 @@
-# Equipe : Les bouchers 
+# Team : Les bouchers 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
