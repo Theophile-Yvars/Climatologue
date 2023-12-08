@@ -26,7 +26,6 @@ function ScenePierro() {
 
   const [isVisible, setIsVisible] = useState(true);
 
-
   const [indiceLeft, setIndiceLeft] = useState(4);
 
   const [carAlreadyShown, setCarAlreadyShown] = useState(false);
@@ -107,14 +106,15 @@ function ScenePierro() {
       const randomAudio = new Audio(audioFiles[randomIndex]);
       randomAudio.play();
   }
-
+  
     
 
     return (
       <>
 
-        <div style={{ display: 'none' }}>
+        <div >
       <H5AudioPlayer
+      autoPlayAfterSrcChange={true}
         autoPlay={true}
         loop={true}
         src={music}
@@ -138,8 +138,8 @@ function ScenePierro() {
           <p>Trouvez les 4 causes du réchauffement climatique pour lui démontrer son erreur</p>
           <button onClick={setIsVisible(false)} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: 'auto' }}>Play !</button>
         </div>
-      )}
-
+      ) }
+{/*
 {showDivCar && (
         <div className="carExplained" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '999', backgroundColor: 'rgba(255, 255, 255, 0.9)', padding: '20px', borderRadius: '10px' }}>
         <h1>Impact du Transport sur le Climat</h1>
@@ -180,7 +180,7 @@ function ScenePierro() {
   <p>Il est essentiel d'explorer des méthodes d'élevage plus durables et respectueuses de l'environnement, telles que l'agriculture biologique, l'élevage en pâturage et la réduction de la consommation de produits issus de l'élevage intensif, afin de réduire l'impact néfaste de l'élevage sur le climat et l'environnement.</p>
         <button onClick={setShowDivCochon(false)} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: 'auto' }}>Close</button>
         </div>
-      )}
+      )}*/}
       
       </>
       
