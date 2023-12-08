@@ -7,6 +7,9 @@ import imgScenePierroDialog from "../res/img/scenePierroDialog.png";
 import imgScenePierro from "../res/img/scenePierro.png";
 import { useLocation } from 'react-router-dom';
 import queryString from 'query-string';
+import H5AudioPlayer from "react-h5-audio-player";
+import music from "../res/music/musicPierro.mp3";
+
 function handleClick(e, area1) {
     console.log("click on : " + area1)
     window.location.href = '/sceneGeorgeJeux';
@@ -35,6 +38,14 @@ function SceneGeorge() {
     return (
 
         <>
+            <div style={{ display: 'none' }}>
+                <H5AudioPlayer
+                    autoPlay={true}
+                    loop={true}
+                    src={music}
+                    onPlay={e => console.log("onPlay")}
+                />
+            </div>
             {fin === 'true' ? (
                 <div className="SceneGeorgeFin">
                     <strong>Les Climatosceptiques et la Quête de l'Information</strong> <br/><br/>
