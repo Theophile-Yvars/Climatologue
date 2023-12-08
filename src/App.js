@@ -3,16 +3,16 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import ScenePierro from './ScenePierro';
+import ScenePierro from './scenePierro/ScenePierro';
 
 const router = createBrowserRouter([
   {
     path: "/scenePierro",
-    element: <div>Hello world Pierro!</div>,
+    element: <ScenePierro />,
   },
   {
     path: "/sceneGeorge",
-    element: <ScenePierro />
+    element: <div>Hello world George!</div>
   },
 ]);
 
