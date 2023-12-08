@@ -31,7 +31,7 @@
 }
 
 .SceneGeorgeDiag{
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 4px;
     background: white;
     padding: 10px;
@@ -40,4 +40,19 @@
     margin-top: -170px;
     position: absolute;
     font-family: system-ui;
+}
+
+.SceneGeorgeBackButton{
+    height: 75px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.SceneGeorgeBackButton img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
 }

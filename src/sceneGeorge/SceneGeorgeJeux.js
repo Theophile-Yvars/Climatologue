@@ -1,11 +1,26 @@
 import './SceneGeorgeJeux.css'
 import imgSceneGeorgeJeux from "../res/img/map-monde.gif";
 import georgeEtonne from '../res/img/GeorgeEtonne.png'
+import button from '../res/img/back-button.png'
+import blabla from "../res/music/blabla.mp3"
+import imgScenePierroDialog from "../res/img/scenePierroDialog.png";
+import imgScenePierro from "../res/img/scenePierro.png";
 
 function SceneGeorgeJeux() {
+// Fonction de gestion du clic sur le bouton de retour
+    const handleBackButtonClick = () => {
+        // Naviguer vers la page "/test"
+        window.location.href = '/sceneGeorge';
+    };
+
+
 
     return (
         <>
+            <div className="SceneGeorgeBackButton">
+                <img src={button} alt="button"  onClick={handleBackButtonClick}/>
+            </div>
+
             <div className="SceneGeorgeJeux">
                 <img src={imgSceneGeorgeJeux} alt="scenePierro"/>
             </div>
