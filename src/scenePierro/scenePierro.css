@@ -1,4 +1,8 @@
 
+.gameExplaination {
+    
+}
+
 .ScenePierro {
     position: fixed;
     top: 0;
@@ -21,8 +25,6 @@
 
 .clickable-area {
     position: absolute;
-    background-color: white;
-    border: 2px solid red;
 }
 
   
