@@ -4,6 +4,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import ScenePierro from './scenePierro/ScenePierro';
+import SceneGeorge from "./sceneGeorge/SceneGeorge";
+import SceneGeorgeJeux from "./sceneGeorge/SceneGeorgeJeux";
 
 const router = createBrowserRouter([
   {
@@ -12,8 +14,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/sceneGeorge",
-    element: <div>Hello world George!</div>
+    element: <SceneGeorge/>
   },
+  {
+    path: "/sceneGeorgeJeux",
+    element: <SceneGeorgeJeux/>
+  }
 ]);
 
 function App() {
