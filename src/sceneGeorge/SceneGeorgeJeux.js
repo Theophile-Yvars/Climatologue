@@ -5,6 +5,9 @@ import button from '../res/img/back-button.png'
 import blabla from "../res/music/blabla.mp3"
 import imgScenePierroDialog from "../res/img/scenePierroDialog.png";
 import imgScenePierro from "../res/img/scenePierro.png";
+import H5AudioPlayer from "react-h5-audio-player";
+import music from "../res/music/musicPierro.mp3";
+import React from "react";
 
 function SceneGeorgeJeux() {
 // Fonction de gestion du clic sur le bouton de retour
@@ -17,6 +20,14 @@ function SceneGeorgeJeux() {
 
     return (
         <>
+            <div style={{ display: 'none' }}>
+                <H5AudioPlayer
+                    autoPlay={true}
+                    loop={true}
+                    src={music}
+                    onPlay={e => console.log("onPlay")}
+                />
+            </div>
             <div className="SceneGeorgeBackButton">
                 <img src={button} alt="button"  onClick={handleBackButtonClick}/>
             </div>
