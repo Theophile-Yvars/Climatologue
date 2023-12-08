@@ -1,4 +1,5 @@
-.fullscreen-image {
+
+.ScenePierro {
     position: fixed;
     top: 0;
     left: 0;
@@ -8,13 +9,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Hide any content that exceeds the container */
-  }
-  
-  .fullscreen-image img {
+    overflow: hidden;
+}
+
+.ScenePierro img {
     max-width: 100%;
     max-height: 100%;
     width: auto;
     height: auto;
-  }
+}
+
   

@@ -1,6 +1,6 @@
 
 import imgScenePierro from "../res/img/scenePierro.png"
-
+import "./scenePierro.css"
 
 function ScenePierro() {
     return (
