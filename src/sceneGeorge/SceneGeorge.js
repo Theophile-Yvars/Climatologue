@@ -1,6 +1,6 @@
 import imgSceneGeorge from "../res/img/sceneGeorge.png"
 import './SceneGeorge.css'
-import { Redirect } from 'react-router-dom';
+import { Redirect, useParams } from 'react-router-dom';
 import React, {useState} from "react";
 import blabla from "../res/music/blabla.mp3";
 import imgScenePierroDialog from "../res/img/scenePierroDialog.png";
@@ -13,8 +13,12 @@ function handleClick(e, area1) {
 
 function SceneGeorge() {
     const [backgroundImage, setBackgroundImage] = useState(imgScenePierro);
-
+    const { fin } = useParams();
     const [isVisible, setIsVisible] = useState(true);
+
+
+    // Vérifier si le paramètre 'fin' est défini à true
+
 
     function playClimatosceptique(e ) {
         const blablaAudio = new Audio(blabla);
@@ -26,7 +30,18 @@ function SceneGeorge() {
     }
 
     return (
+
         <>
+            {fin === 'true' ? (
+                // Afficher ces éléments si le paramètre 'fin' est défini à true
+                <div className="SceneGeorge">
+                    <img src={imgSceneGeorge} alt="scenePierro"/>
+                </div>
+            ) : (
+                <div style={{ display: 'none' }}></div>
+            )}
+
+            // Afficher ces éléments si le paramètre 'fin' n'est pas défini à true
             <div className="SceneGeorge">
                 <img src={imgSceneGeorge} alt="scenePierro"/>
             </div>

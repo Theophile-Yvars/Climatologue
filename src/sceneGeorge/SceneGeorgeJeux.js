@@ -10,7 +10,7 @@ function SceneGeorgeJeux() {
 // Fonction de gestion du clic sur le bouton de retour
     const handleBackButtonClick = () => {
         // Naviguer vers la page "/test"
-        window.location.href = '/sceneGeorge';
+        window.location.href = '/sceneGeorge?fin=true';
     };
 
 
