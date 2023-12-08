@@ -9,7 +9,7 @@ import SceneGeorgeJeux from "./sceneGeorge/SceneGeorgeJeux";
 
 const router = createBrowserRouter([
   {
-    path: "/scenePierro",
+    path: "/",
     element: <ScenePierro />,
   },
   {
